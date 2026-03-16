@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#7c3aed" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Collaborative Probe" />
+  <title>સહયોગી રમત પ્રોટોટાઇપ</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <h1 class="brand-title" id="app-title"></h1>
+        <p class="brand-subtitle" id="app-subtitle"></p>
+      </div>
+
+      <div class="topbar-actions">
+        <label class="lang-picker-wrap" for="language-select">
+          <span id="language-label"></span>
+          <select id="language-select" class="lang-picker" aria-label="Language">
+            <option value="gu">ગુજરાતી</option>
+            <option value="hi">हिन्दी</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+
+        <button id="install-btn" class="secondary hidden" type="button"></button>
+      </div>
+    </header>
+
+    <main class="app">
+      <section id="home-screen" class="screen"></section>
+      <section id="probe-screen" class="card screen hidden"></section>
+    </main>
+  </div>
+
+  <script src="./content.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
